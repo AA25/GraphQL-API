@@ -1,0 +1,15 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+out/
+
+# Kotlin Test
+.kotlintest/
+
+# Other
+*.ipr
+*.iws
