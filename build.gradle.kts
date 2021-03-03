@@ -5,6 +5,7 @@ val logbackVersion: String by project
 val ktorVersion: String by project
 val kotlinVersion: String by project
 val loggingWrapperVersion: String by project
+val graphqlKotlinVersion: String by project
 
 plugins {
     application
@@ -40,6 +41,11 @@ dependencies {
     // Kotest framework and assertion
     testImplementation("io.kotest:kotest-runner-junit5:4.4.1")
     testImplementation("io.kotest:kotest-assertions-core:4.4.1")
+
+    // Schema Generator
+    implementation("com.expediagroup:graphql-kotlin-schema-generator:$graphqlKotlinVersion")
+    implementation("com.expediagroup:graphql-kotlin-types:$graphqlKotlinVersion")
+    implementation("com.expediagroup:graphql-kotlin-server:$graphqlKotlinVersion")
 }
 
 tasks.withType<KotlinCompile> {

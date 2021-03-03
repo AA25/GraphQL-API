@@ -1,5 +1,21 @@
 # Example Ktor API (Gradle, Kotlin, GraphQL Project)
 
+## Usage
+Vist `localhost:8088/playground` to query the graphQL API.
+At the moment it only supports
+```
+query {
+  hello
+}
+```
+Another option is to curl a POST request to `localhost:8088/graphql` with the following
+body
+```
+curl -X POST 'http://0.0.0.0:8088/graphql' \
+-H 'Content-Type: application/json' \
+--data-raw '{"query":"query {hello}\n","variables":{}}'
+```
+
 ## Using Gradle
 ```
 # To run tests for a project, Gradle will not run tests for area's that have not had any changes.
