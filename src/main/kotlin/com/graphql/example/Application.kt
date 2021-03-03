@@ -1,4 +1,4 @@
-package com.example
+package com.graphql.example
 
 import io.ktor.application.*
 import io.ktor.response.*
