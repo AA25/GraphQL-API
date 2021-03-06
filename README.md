@@ -4,8 +4,20 @@
 Vist `localhost:8088/playground` to query the graphQL API.
 At the moment it only supports
 ```
-query {
-  hello
+query{
+  pokemon(params: {ids: [1,4,7,25]}){
+    name,
+    type
+  }
+}
+
+query{
+  pokemons{
+    name
+    games {
+     name
+    }
+  }
 }
 ```
 Another option is to curl a POST request to `localhost:8088/graphql` with the following
