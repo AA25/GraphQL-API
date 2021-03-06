@@ -9,5 +9,5 @@ import java.util.*
 data class Context(
     val customHeader: String? = null
 ) : GraphQLContext {
-    val uuid: UUID = UUID.randomUUID();
+    val uuid: UUID = UUID.randomUUID()
 }

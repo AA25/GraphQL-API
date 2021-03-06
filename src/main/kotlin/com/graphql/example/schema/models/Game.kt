@@ -17,8 +17,15 @@ data class Game(
         }
 
         fun getAllGames(): List<Game> {
+            return pokemonDataStore()
+        }
+
+        private fun pokemonDataStore(): List<Game> {
             return listOf(
-                Game(1, PokemonSeries.RBG.gameName, PokemonSeries.RBG.region, PokemonSeries.RBG.year)
+                Game(1, PokemonSeries.RBG.seriesName, PokemonSeries.RBG.region, PokemonSeries.RBG.year),
+                Game(2, PokemonSeries.YRB.seriesName, PokemonSeries.YRB.region, PokemonSeries.YRB.year),
+                Game(3, PokemonSeries.GS.seriesName, PokemonSeries.GS.region, PokemonSeries.GS.year),
+                Game(4, PokemonSeries.CRYSTAL.seriesName, PokemonSeries.CRYSTAL.region, PokemonSeries.CRYSTAL.year),
             )
         }
     }

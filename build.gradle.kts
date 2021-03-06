@@ -42,6 +42,9 @@ dependencies {
     testImplementation("io.kotest:kotest-runner-junit5:4.4.1")
     testImplementation("io.kotest:kotest-assertions-core:4.4.1")
 
+    // Mockk for mocking with Kotlin support
+    testImplementation("io.mockk:mockk:1.10.6")
+
     // Schema Generator
     implementation("com.expediagroup:graphql-kotlin-schema-generator:$graphqlKotlinVersion")
     implementation("com.expediagroup:graphql-kotlin-types:$graphqlKotlinVersion")
@@ -56,10 +59,6 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
-    testLogging {
-        events("passed", "skipped", "failed")
-        exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
-    }
 }
 
 kotlin.sourceSets["main"].kotlin.srcDirs("src/main")
