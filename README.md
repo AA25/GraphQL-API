@@ -1,4 +1,4 @@
-# GraphQL API (Gradle, Kotlin, GraphQL Project)
+# GraphQL API (Gradle, Kotlin, Ktor, GraphQL, Kotest, Docker)
 This project provides a GraphQL API where Pokemon data can be queried, and will be used as the 
 backend (Hosted in AWS) to a react native application currently in progress.
 
