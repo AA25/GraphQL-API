@@ -63,5 +63,7 @@ docker-compose up
 
 ## Resources
 https://ktor.io/quickstart/guides/api.html
+
 https://expediagroup.github.io/graphql-kotlin/docs/server/graphql-server
+
 https://kotest.io/docs/quickstart
