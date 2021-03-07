@@ -1,8 +1,12 @@
-# Example Ktor API (Gradle, Kotlin, GraphQL Project)
+# GraphQL API (Gradle, Kotlin, GraphQL Project)
+This project provides a GraphQL API where Pokemon data can be queried, and will be used as the 
+backend (Hosted in AWS) to a react native application currently in progress.
+
+This project was created to help solidify my understanding of graphQL in a practical sense.
 
 ## Usage
-Vist `localhost:8088/playground` to query the graphQL API.
-At the moment it only supports
+Run project using either docker or gradle (see commands below) and
+Visit `localhost:8088/playground` to query the graphQL API and view endpoint documentation.
 ```
 query{
   pokemon(params: {ids: [1,4,7,25]}){
@@ -20,12 +24,20 @@ query{
   }
 }
 ```
-Another option is to curl a POST request to `localhost:8088/graphql` with the following
-body
+Another option is to curl a POST request to `localhost:8088/graphql` with the following body
 ```
 curl -X POST 'http://0.0.0.0:8088/graphql' \
 -H 'Content-Type: application/json' \
---data-raw '{"query":"query {hello}\n","variables":{}}'
+--data-raw '{"query":"query {\n pokemon(params: {ids: [1,4,7,25]}){\n name,\n type \n } \n } \n","variables":{}}'
+```
+
+## Using Docker Compose
+```
+# Build the image
+docker-compose build
+
+# Start the basic application in Docker
+docker-compose up
 ```
 
 ## Using Gradle
