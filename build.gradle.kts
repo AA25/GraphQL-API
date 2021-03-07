@@ -1,4 +1,3 @@
-import org.jetbrains.kotlin.gradle.dsl.Coroutines
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 val logbackVersion: String by project
@@ -6,6 +5,8 @@ val ktorVersion: String by project
 val kotlinVersion: String by project
 val loggingWrapperVersion: String by project
 val graphqlKotlinVersion: String by project
+val kotestVersion: String by project
+val mockkVersion: String by project
 
 plugins {
     application
@@ -39,11 +40,11 @@ dependencies {
     implementation("io.github.microutils:kotlin-logging:$loggingWrapperVersion")
 
     // Kotest framework and assertion
-    testImplementation("io.kotest:kotest-runner-junit5:4.4.1")
-    testImplementation("io.kotest:kotest-assertions-core:4.4.1")
+    testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
+    testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
 
     // Mockk for mocking with Kotlin support
-    testImplementation("io.mockk:mockk:1.10.6")
+    testImplementation("io.mockk:mockk:$mockkVersion")
 
     // Schema Generator
     implementation("com.expediagroup:graphql-kotlin-schema-generator:$graphqlKotlinVersion")
@@ -65,4 +66,3 @@ kotlin.sourceSets["main"].kotlin.srcDirs("src/main")
 kotlin.sourceSets["test"].kotlin.srcDirs("src/test")
 
 sourceSets["main"].resources.srcDirs("src/main/resources")
-//sourceSets["test"].resources.srcDirs("testresources")
