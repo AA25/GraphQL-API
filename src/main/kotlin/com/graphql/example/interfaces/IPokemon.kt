@@ -12,6 +12,6 @@ interface IPokemon {
     val games: List<Int>
     val relatedPokemonByType: List<PokemonType>
     val signatureMove: String
-    val imageLink: String
+    val imageSource: String
     val gameId: List<Int>
 }

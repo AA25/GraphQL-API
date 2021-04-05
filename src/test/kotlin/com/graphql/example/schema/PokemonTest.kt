@@ -19,10 +19,10 @@ class PokemonTest: DescribeSpec({
     describe("Testing Pokemon class companion object methods not getters/setters"){
         // Currently pokemon data is created and returned statically, in the future this will be coming from a database.
         // To avoid updating tests when that happens, we will instead mock the returned data
-        val pikachuTest = Pokemon("Pikachu", 25, listOf(PokemonType.ELECTRIC), 0, 0, listOf(0), listOf(PokemonType.ELECTRIC), "Volt Tackle", "imageLink", listOf(1))
-        val bulbasaurTest = Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0, 0, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "imageLink", listOf(1))
-        val charmanderTest = Pokemon("Charmander", 4, listOf(PokemonType.FIRE), 0, 0, listOf(0), listOf(PokemonType.FIRE), "Ember", "imageLink", listOf(1))
-        val squirtleTest = Pokemon("Squirtle", 7, listOf(PokemonType.WATER), 0, 0, listOf(0), listOf(PokemonType.WATER), "Water Gun", "imageLink", listOf(1))
+        val pikachuTest = Pokemon("Pikachu", 25, listOf(PokemonType.ELECTRIC), 0, 0, listOf(0), listOf(PokemonType.ELECTRIC), "Volt Tackle", "imageSource", listOf(1))
+        val bulbasaurTest = Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0, 0, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "imageSource", listOf(1))
+        val charmanderTest = Pokemon("Charmander", 4, listOf(PokemonType.FIRE), 0, 0, listOf(0), listOf(PokemonType.FIRE), "Ember", "imageSource", listOf(1))
+        val squirtleTest = Pokemon("Squirtle", 7, listOf(PokemonType.WATER), 0, 0, listOf(0), listOf(PokemonType.WATER), "Water Gun", "imageSource", listOf(1))
 
         every {
             pokemonMock.getAllPokemons()

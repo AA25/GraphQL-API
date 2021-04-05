@@ -14,7 +14,7 @@ data class Pokemon(
     val games: List<Int>,
     val relatedPokemonByType: List<PokemonType>,
     val signatureMove: String,
-    val imageLink: String,
+    val imageSource: String,
     val gameId: List<Int>,
 ) { // TODO: Applying PokemonInterface seems to break the schema auto generation for some reason?
     companion object {
@@ -24,10 +24,10 @@ data class Pokemon(
 
        fun getAllPokemons(): List<Pokemon> {
             return listOf(
-                Pokemon("Pikachu", 25, listOf(PokemonType.ELECTRIC), 0, 0, listOf(0), listOf(PokemonType.ELECTRIC), "Volt Tackle", "imageLink", listOf(1)),
-                Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0, 0, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "imageLink", listOf(1)),
-                Pokemon("Charmander", 4, listOf(PokemonType.FIRE), 0, 0, listOf(0), listOf(PokemonType.FIRE), "Ember", "imageLink", listOf(1)),
-                Pokemon("Squirtle", 7, listOf(PokemonType.WATER), 0, 0, listOf(0), listOf(PokemonType.WATER), "Water Gun", "imageLink", listOf(1))
+                Pokemon("Pikachu", 25, listOf(PokemonType.ELECTRIC), 0, 0, listOf(0), listOf(PokemonType.ELECTRIC), "Volt Tackle", "imageSource", listOf(1)),
+                Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0, 0, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "imageSource", listOf(1)),
+                Pokemon("Charmander", 4, listOf(PokemonType.FIRE), 0, 0, listOf(0), listOf(PokemonType.FIRE), "Ember", "imageSource", listOf(1)),
+                Pokemon("Squirtle", 7, listOf(PokemonType.WATER), 0, 0, listOf(0), listOf(PokemonType.WATER), "Water Gun", "imageSource", listOf(1))
             )
        }
     }
