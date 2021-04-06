@@ -4,6 +4,8 @@ backend (Hosted in AWS) to a react native application currently in progress.
 
 This project was created to help solidify my understanding of graphQL in a practical sense.
 
+![](https://j.gifs.com/P7RJjn.gif)
+
 ## Usage
 Run project using either docker or gradle (see commands below) and
 Visit `localhost:8088/playground` to query the graphQL API and view endpoint documentation.
