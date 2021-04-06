@@ -42,7 +42,7 @@ docker-compose build
 docker-compose up
 ```
 
-## Using Gradle
+## Using Gradle (Requires Java 1.8)
 ```
 # To run tests for a project, Gradle will not run tests for area's that have not had any changes.
 ./gradlew test
@@ -63,5 +63,7 @@ docker-compose up
 
 ## Resources
 https://ktor.io/quickstart/guides/api.html
+
 https://expediagroup.github.io/graphql-kotlin/docs/server/graphql-server
+
 https://kotest.io/docs/quickstart
