@@ -16,7 +16,7 @@ data class Pokemon(
     val signatureMove: String,
     val imageSource: String,
     val gameId: List<Int>,
-    val Species: String,
+    val species: String,
 ) { // TODO: Applying PokemonInterface seems to break the schema auto generation for some reason?
     companion object {
         fun search(ids: List<Int>): List<Pokemon> {
