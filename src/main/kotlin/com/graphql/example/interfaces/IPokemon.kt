@@ -14,4 +14,5 @@ interface IPokemon {
     val signatureMove: String
     val imageSource: String
     val gameId: List<Int>
+    val species: String
 }
