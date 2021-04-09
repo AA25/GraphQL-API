@@ -27,7 +27,7 @@ data class Pokemon(
        fun getAllPokemons(): List<Pokemon> {
             return listOf(
                 Pokemon("Pikachu", 25, listOf(PokemonType.ELECTRIC), 0.4f, 6.0f, listOf(0), listOf(PokemonType.ELECTRIC), "Volt Tackle", "http://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png", listOf(1), "Mouse"),
-                Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0.7f, 6.9f, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "https://i.pinimg.com/originals/3b/78/47/3b7847675982776e5219e12a680ecd84.png", listOf(1), "Speed"),
+                Pokemon("Bulbasaur", 1, listOf(PokemonType.GRASS, PokemonType.POISON), 0.7f, 6.9f, listOf(0), listOf(PokemonType.GRASS), "Vine Whip", "https://i.pinimg.com/originals/3b/78/47/3b7847675982776e5219e12a680ecd84.png", listOf(1), "Seed"),
                 Pokemon("Charmander", 4, listOf(PokemonType.FIRE), 0.6f, 8.5f, listOf(0), listOf(PokemonType.FIRE), "Ember", "https://static.wikia.nocookie.net/pokemon-revolution/images/4/41/004Charmander_OS_anime_2.png/revision/latest/scale-to-width-down/340?cb=20150625082016", listOf(1), "Lizard"),
                 Pokemon("Squirtle", 7, listOf(PokemonType.WATER), 0.5f, 9.0f, listOf(0), listOf(PokemonType.WATER), "Rapid Spin", "http://assets.stickpng.com/images/580b57fcd9996e24bc43c32a.png", listOf(1), "Tiny Turtle"),
                 Pokemon("Chikorita", 152, listOf(PokemonType.GRASS), 0.9f, 6.4f, listOf(0), listOf(PokemonType.GRASS), "Razor Leaf", "https://static.wikia.nocookie.net/legendsofthemultiuniverse/images/b/bf/152-Chikorita.png/revision/latest?cb=20190224185631", listOf(1), "Leaf"),
