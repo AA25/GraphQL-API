@@ -5,7 +5,8 @@ backend API to a react native application of mine (https://github.com/AA25/poked
 ![](https://j.gifs.com/P7RJjn.gif)
 
 The application in currently running as docker container in AWS via Amazon ECS.
-<img src="https://i.imgur.com/L3UaNFO.png">
+
+<img src="https://i.imgur.com/0uUI2Pl.png">
 
 ## Usage
 Run project using either docker or gradle (see commands below) and
