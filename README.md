@@ -1,10 +1,11 @@
 # Pokemon GraphQL API (Kotlin, Gradle, Ktor, GraphQL, Kotest, Docker, GraphQL Kotlin)
 This project provides a GraphQL API where Pokemon data can be queried, and will be used as the 
-backend (Hosted in AWS) to a react native application currently in progress.
-
-This project was created to help solidify my understanding of graphQL in a practical sense.
+backend API to a react native application of mine (https://github.com/AA25/pokedexGQL)
 
 ![](https://j.gifs.com/P7RJjn.gif)
+
+The application in currently running as docker container in AWS via Amazon ECS.
+<img src="https://i.imgur.com/L3UaNFO.png">
 
 ## Usage
 Run project using either docker or gradle (see commands below) and
